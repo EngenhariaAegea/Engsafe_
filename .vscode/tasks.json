@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "EngSafe: validar",
+      "type": "shell",
+      "command": "npm run check",
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "EngSafe: Worker local",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": { "cwd": "${workspaceFolder}/worker" },
+      "problemMatcher": []
+    }
+  ]
+}
